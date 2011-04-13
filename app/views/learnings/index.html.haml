@@ -1,0 +1,19 @@
+%h1 Listing learnings
+
+%table
+  %tr
+    %th Content
+    %th
+    %th
+    %th
+
+  - @learnings.each do |learning|
+    %tr
+      %td= learning.content
+      %td= link_to 'Show', learning
+      %td= link_to 'Edit', edit_learning_path(learning)
+      %td= link_to 'Destroy', learning, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Learning', new_learning_path

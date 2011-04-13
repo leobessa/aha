@@ -1,0 +1,13 @@
+= form_for @learning do |f|
+  -if @learning.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@learning.errors.count, "error")} prohibited this learning from being saved:"
+      %ul
+        - @learning.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :content
+    = f.text_field :content
+  .actions
+    = f.submit 'Save'

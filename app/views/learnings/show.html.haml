@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Content:
+  = @learning.content
+
+= link_to 'Edit', edit_learning_path(@learning)
+\|
+= link_to 'Back', learnings_path
