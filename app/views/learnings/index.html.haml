@@ -1,19 +1,15 @@
-%h1 Listing learnings
-
-%table
-  %tr
-    %th Content
-    %th
-    %th
-    %th
-
+%ul.learnings
   - @learnings.each do |learning|
-    %tr
-      %td= learning.content
-      %td= link_to 'Show', learning
-      %td= link_to 'Edit', edit_learning_path(learning)
-      %td= link_to 'Destroy', learning, :confirm => 'Are you sure?', :method => :delete
+    %li[learning]
+      %span.content= learning.content
+      .actions
+        = link_to 'Edit', edit_learning_path(learning)
+        = link_to 'Destroy', learning, :confirm => 'Are you sure?', :method => :delete
 
-%br
-
-= link_to 'New Learning', new_learning_path
+- content_for :header do
+  %h1 Aha
+  = form_for :learning, :class => 'bp' do |f|
+    .field
+      = f.text_field :content, :placeholder => 'O que você aprendeu hoje?'
+    .actions
+      = f.submit 'Save'

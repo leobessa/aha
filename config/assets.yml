@@ -1,6 +1,9 @@
 javascripts:
   app:
-    - public/javascripts/*.js
+    - public/javascripts/jquery.js
+    - public/javascripts/jquery-ui.js
+    - public/javascripts/rails.js
+    - public/javascripts/application.js
 stylesheets:
   app:
     - public/stylesheets/*.css

@@ -1,0 +1,9 @@
+!!!
+%html
+  = render :partial => "layouts/head"
+  %body.bp
+    .container
+      = render :partial => "layouts/header"
+      #content
+        = yield
+    = include_javascripts :app

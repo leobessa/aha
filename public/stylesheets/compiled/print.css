@@ -1,0 +1,63 @@
+/*
+Syntax error: Invalid CSS after "...emantic layout:": expected selector or at-rule, was "body.bp {"
+        on line 7 of /Users/leonardobessa/workspace/aha/app/stylesheets/print.scss
+
+2: 
+3: // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:
+4: @include blueprint-print
+5: 
+6: //Recommended Blueprint configuration with scoping and semantic layout:
+7: body.bp {
+8:   @include blueprint-print(true); }
+
+Backtrace:
+/Users/leonardobessa/workspace/aha/app/stylesheets/print.scss:7
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/scss/parser.rb:838:in `expected'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/scss/parser.rb:813:in `expected'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/scss/parser.rb:27:in `parse'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/engine.rb:213:in `_to_tree'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/engine.rb:179:in `block in to_tree'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/haml/util.rb:294:in `silence_haml_warnings'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/engine.rb:179:in `to_tree'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/files.rb:44:in `tree_for'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/plugin.rb:223:in `update_stylesheet'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/plugin.rb:88:in `block (2 levels) in update_stylesheets'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `each'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/plugin.rb:81:in `block in update_stylesheets'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `each'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `update_stylesheets'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/plugin.rb:50:in `check_for_updates'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/haml-3.0.25/lib/sass/plugin/rack.rb:40:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/cookies.rb:302:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/activesupport-3.0.6/lib/active_support/callbacks.rb:416:in `_run_call_callbacks'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/rack-1.2.2/lib/rack/sendfile.rb:107:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/railties-3.0.6/lib/rails/rack/logger.rb:13:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/rack-1.2.2/lib/rack/runtime.rb:17:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/activesupport-3.0.6/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/rack-1.2.2/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/rack-1.2.2/lib/rack/lock.rb:11:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/actionpack-3.0.6/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/railties-3.0.6/lib/rails/application.rb:168:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/railties-3.0.6/lib/rails/application.rb:77:in `method_missing'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/railties-3.0.6/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/rack-1.2.2/lib/rack/content_length.rb:13:in `call'
+/Users/leonardobessa/.rvm/gems/ruby-1.9.2-p180@aha/gems/rack-1.2.2/lib/rack/handler/webrick.rb:52:in `service'
+/Users/leonardobessa/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/leonardobessa/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/leonardobessa/.rvm/rubies/ruby-1.9.2-p180/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...emantic layout:\": expected selector or at-rule, was \"body.bp {\"\A         on line 7 of /Users/leonardobessa/workspace/aha/app/stylesheets/print.scss\A \A 2: \A 3: // To generate css equivalent to the blueprint css but with your configuration applied, uncomment:\A 4: @include blueprint-print\A 5: \A 6: //Recommended Blueprint configuration with scoping and semantic layout:\A 7: body.bp {\A 8:   @include blueprint-print(true); }"; }

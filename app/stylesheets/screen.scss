@@ -1,0 +1,62 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+body.bp {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+  background: none repeat scroll 0 0 #EEEEEE;
+  color: #333333;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+form.bp {
+  @include blueprint-form;
+}
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+html {
+  background: none repeat scroll 0 0 #EEEEEE;
+}
+body.bp {
+  .container{
+    background: none repeat scroll 0 0 white;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto 40px;
+    padding: 20px;
+    width: 480px;
+  }
+  #header, #footer {
+    background-color: #FFFFFF;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1;
+    padding: 20px 0;
+    text-align: center;
+  }
+  #content {
+    background-color: #FFFFFF;
+  }
+  #learning_content{
+    border: 1px solid #999999;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) inset;
+    font-family: inherit;
+    font-size: 24px;
+    line-height: 1.4em;
+    outline: medium none;
+    padding: 6px;
+    width: 466px;
+  }
+}
+
