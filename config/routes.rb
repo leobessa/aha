@@ -1,6 +1,6 @@
 Aha::Application.routes.draw do
   resources :learnings
-
+  root :to => "learnings#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
