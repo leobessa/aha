@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem "bson_ext"
+gem "compass", ">= 0.10.6"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "jammit"
