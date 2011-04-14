@@ -462,7 +462,7 @@ html {
 }
 
 /* line 31, ../../../app/stylesheets/screen.scss */
-body.bp .container {
+body.bp #app {
   background: none repeat scroll 0 0 white;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
   margin: 0 auto 40px;
