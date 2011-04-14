@@ -1,0 +1,14 @@
+<% if(collection.models.length > 0) { %>
+    <% collection.each(function(item) { %>
+        <li class="learning" id="learning_<%= item.attributes['_id'] %>">
+          <span class="content"><%= item.escape('content') %></span>
+          <div class="actions">
+            <a href="/learnings/<%= item.attributes['_id'] %>/edit">Edit</a>
+            <a class="delete" rel="nofollow" data-method="delete" data-confirm="Are you sure?" href="/learnings/<%= item.attributes['_id'] %>">Destroy</a>
+          </div>
+        </li>
+    <% }); %>
+    </ul>
+<% } else { %>
+    <h3>No learnings! <a href='#new'>Create one</a></h3>
+<% } %>

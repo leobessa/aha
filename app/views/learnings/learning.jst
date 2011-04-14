@@ -1,0 +1,7 @@
+<li class="learning" id="learning_<%= model.attributes['_id'] %>">
+  <span class="content"><%= model.escape('content') %></span>
+  <div class="actions">
+    <a href="/learnings/<%= model.attributes['_id'] %>/edit">Edit</a>
+    <a class="delete" rel="nofollow" data-method="delete" data-confirm="Are you sure?" href="/learnings/<%= model.attributes['_id'] %>">Destroy</a>
+  </div>
+</li>
